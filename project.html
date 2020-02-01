@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="experimentStyle.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script src="experimentJS.js"></script>
+	</head>
+	<body>
+		<div id="texts">
+			<a class="text" href="#first-text">
+				<div id="text1">
+					<p id="1" draggable="true" ondragstart="drag(event); selectText(this);">
+					Beetles are a group of insects that form the order Coleoptera, in the superorder Endopterygota. Their front pair of wings are hardened into wing-cases, elytra, distinguishing them from most other insects.</p>
+				</div>
+			</a> 
+			<div class="text-target" id="first-text" >
+   				<div>Beetles are a group of insects that form the order Coleoptera, in the superorder Endopterygota. Their front pair of wings are hardened into wing-cases, elytra, distinguishing them from most other insects.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+			<a class="text" href="#second-text">
+				<div id="text2">
+					<p id="2" draggable="true" ondragstart="drag(event); selectText(this);">
+					The Coleoptera, with about 400,000 species, is the largest of all orders, constituting almost 40% of described insects and 25% of all known animal life-forms; new species are discovered frequently.</p>
+				</div>
+			</a> 
+			<div class="text-target" id="second-text">
+   				<div>The Coleoptera, with about 400,000 species, is the largest of all orders, constituting almost 40% of described insects and 25% of all known animal life-forms; new species are discovered frequently.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+			<a class="text" href="#third-text">
+				<div id="text3">
+					<p id="3" draggable="true" ondragstart="drag(event); selectText(this);">
+					The largest of all families, the Curculionidae (weevils), with some 83,000 member species, belongs to this order.<p>
+				</div>
+			</a> 
+			<div class="text-target" id="third-text">
+   				<div>The largest of all families, the Curculionidae (weevils), with some 83,000 member species, belongs to this order.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+			<a class="text" href="#fourth-text">
+				<div id="text4">
+					<p id="4" draggable="true" ondragstart="drag(event); selectText(this);">
+					Found in almost every habitat except the sea and the polar regions, they interact with their ecosystems in several ways: beetles often feed on plants and fungi, break down animal and plant debris, and eat other invertebrates.</p>
+				</div>
+			</a> 
+			<div class="text-target" id="fourth-text" >
+   				<div>Found in almost every habitat except the sea and the polar regions, they interact with their ecosystems in several ways: beetles often feed on plants and fungi, break down animal and plant debris, and eat other invertebrates.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+			<a class="text" href="#fifth-text">
+				<div id="text5">
+					<p id="5" draggable="true" ondragstart="drag(event); selectText(this);">
+					Some species are serious agricultural pests, such as the Colorado potato beetle, while others such as Coccinellidae (ladybirds or ladybugs) eat aphids, scale insects, thrips, and other plant-sucking insects that damage crops.</p>
+				</div>
+			</a> 
+			<div class="text-target" id="fifth-text">
+   				<div>Some species are serious agricultural pests, such as the Colorado potato beetle, while others such as Coccinellidae (ladybirds or ladybugs) eat aphids, scale insects, thrips, and other plant-sucking insects that damage crops.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+			<a class="text" href="#sixth-text">
+				<div id="text6">
+					<p id="6" draggable="true" ondragstart="drag(event); selectText(this);">
+					Beetles typically have a particularly hard exoskeleton including the elytra, though some such as the rove beetles have very short elytra while blister beetles have softer elytra.</p>
+				</div>
+			</a> 
+			<div class="text-target" id="sixth-text">
+   				<div>Beetles typically have a particularly hard exoskeleton including the elytra, though some such as the rove beetles have very short elytra while blister beetles have softer elytra.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+			<a class="text" href="#seventh-text">
+				<div id="text7">
+					<p id="7" draggable="true" ondragstart="drag(event); selectText(this);">
+					The general anatomy of a beetle is quite uniform and typical of insects, although there are several examples of novelty, such as adaptations in water beetles which trap air bubbles under the elytra for use while diving.</p>
+				</div>
+			</a> 
+			<div class="text-target" id="seventh-text">
+   				<div>The general anatomy of a beetle is quite uniform and typical of insects, although there are several examples of novelty, such as adaptations in water beetles which trap air bubbles under the elytra for use while diving.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+			<a class="text" href="#eighth-text">
+				<div id="text8">
+					<p id="8" draggable="true" ondragstart="drag(event); selectText(this);">
+					Beetles are endopterygotes, which means that they undergo complete metamorphosis, with a series of conspicuous and relatively abrupt changes in body structure between hatching and becoming adult after a relatively immobile pupal stage.</p>
+				</div>
+			</a> 
+			<div class="text-target" id="eighth-text" >
+   				<div>Beetles are endopterygotes, which means that they undergo complete metamorphosis, with a series of conspicuous and relatively abrupt changes in body structure between hatching and becoming adult after a relatively immobile pupal stage.</div>
+   				<a class="text-close" href="#"></a>
+			</div>
+		</div>
+		<div id="boxes">
+    		<div id="box1" ondrop="selectBox(this); drop(event);" ondragover="allowDrop(event)"></div>
+    		<div id="box2" ondrop="selectBox(this); drop(event);" ondragover="allowDrop(event)"></div>
+    		<div id="box3" ondrop="selectBox(this); drop(event);" ondragover="allowDrop(event)"></div>
+    		<div id="box4" ondrop="selectBox(this); drop(event);" ondragover="allowDrop(event)"></div>
+    		<div id="box5" ondrop="selectBox(this); drop(event);" ondragover="allowDrop(event)"></div>
+		</div>
+		<form action="/action_page.php">
+  			<div class="buttonContainer">
+  				<input type="submit" value="Submit">
+			</div>
+		</form>
+	</body>
+</html>
